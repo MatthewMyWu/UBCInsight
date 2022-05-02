@@ -1,0 +1,57 @@
+{
+	"title": "ID is not included in APPLY fields",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 300
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"maxSeats",
+				"minSeats",
+				"sumSeats"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"sumSeats", "minSeats", "maxSeats"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"maxSeats": {
+						"MAX": "seats"
+					}
+				},
+				{
+					"minSeats": {
+						"MIN": "seats"
+					}
+				},
+				{
+					"sumSeats": {
+						"SUM": "seats"
+					}
+				}
+			]
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

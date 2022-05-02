@@ -1,0 +1,65 @@
+{
+  "title": "Average field",
+  "input": {
+    "WHERE": {
+      "EQ": {
+        "courses_avg": 50
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_pass",
+        "courses_fail",
+        "courses_audit",
+        "courses_year",
+        "courses_dept",
+        "courses_id",
+        "courses_instructor",
+        "courses_title",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_year"
+    }
+  },
+  "with": [
+    {
+      "courses_avg": 50,
+      "courses_pass": 1,
+      "courses_fail": 0,
+      "courses_audit": 0,
+      "courses_year": 2009,
+      "courses_dept": "psyc",
+      "courses_id": "315",
+      "courses_instructor": "king, mary ann",
+      "courses_title": "childhood & adol",
+      "courses_uuid": "78941"
+    },
+    {
+      "courses_avg": 50,
+      "courses_pass": 7,
+      "courses_fail": 0,
+      "courses_audit": 0,
+      "courses_year": 2012,
+      "courses_dept": "chbe",
+      "courses_id": "474",
+      "courses_instructor": "",
+      "courses_title": "proc ctrl eng",
+      "courses_uuid": "56484"
+    },
+    {
+      "courses_avg": 50,
+      "courses_pass": 3,
+      "courses_fail": 2,
+      "courses_audit": 0,
+      "courses_year": 2013,
+      "courses_dept": "busi",
+      "courses_id": "441",
+      "courses_instructor": "",
+      "courses_title": "rl es manage i",
+      "courses_uuid": "11135"
+    }
+  ],
+  "errorExpected": false
+}
+

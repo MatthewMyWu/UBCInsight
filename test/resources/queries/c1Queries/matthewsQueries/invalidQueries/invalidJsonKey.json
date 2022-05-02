@@ -1,0 +1,21 @@
+{
+	"title": "Invalid EBNF key provided in input",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_avg"
+			],
+			"ORDER": "courses_avg"
+		},
+		"InvalidKey": "beep boop"
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}
+

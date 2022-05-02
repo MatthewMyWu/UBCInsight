@@ -1,0 +1,24 @@
+{
+  "title": "Should fail because course_avg is a string",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": "90"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg",
+        "courses_pass",
+        "courses_instructor",
+        "courses_id",
+        "courses_year",
+        "courses_audit"
+      ],
+      "ORDER": "courses_year"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}

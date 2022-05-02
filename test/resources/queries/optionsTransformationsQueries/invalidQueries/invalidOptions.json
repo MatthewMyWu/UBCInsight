@@ -1,0 +1,36 @@
+{
+	"title": "Missing DIR in ORDER",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 300
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_name",
+				"rooms_seats"
+			],
+			"ORDER": {
+				"keys": [
+					"rooms_name"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": ["rooms_name", "rooms_seats"],
+			"APPLY": []
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

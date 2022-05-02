@@ -1,0 +1,24 @@
+{
+	"title": "Testing Double negation",
+	"input": {
+		"WHERE": {
+			"NOT": {
+				"NOT": {
+					"IS": {
+						"rooms_shortname": "MATH"
+					}
+				}
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"rooms_name"
+			],
+			"ORDER": "rooms_name"
+		}
+	},
+	"with": [{"rooms_shortname":"MATH","rooms_fullname":"Mathematics","rooms_name":"MATH_100"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics","rooms_name":"MATH_102"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics","rooms_name":"MATH_104"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics","rooms_name":"MATH_105"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics","rooms_name":"MATH_202"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics","rooms_name":"MATH_203"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics","rooms_name":"MATH_204"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics","rooms_name":"MATH_225"}],
+	"errorExpected": false
+}

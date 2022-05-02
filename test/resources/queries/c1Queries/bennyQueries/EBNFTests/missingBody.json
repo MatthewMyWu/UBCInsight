@@ -1,0 +1,11 @@
+{
+	"title": "should reject query because required BODY is missing",
+	"input":  {
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

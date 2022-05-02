@@ -1,0 +1,15 @@
+{
+	"title": "should perform a query with asterisks in idstring and underscores in inputstring",
+	"input":  {
+		"WHERE": {
+			"IS": {
+				" invalid * stuff _id": "_ _ _ _ "
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [" invalid * stuff _avg"]
+		}
+	},
+	"with": [],
+	"errorExpected": false
+}

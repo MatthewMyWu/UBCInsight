@@ -1,0 +1,17 @@
+{
+	"title": "should reject query because there is an extra numeric key in outer object",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_avg"
+		},
+		"5": 21
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

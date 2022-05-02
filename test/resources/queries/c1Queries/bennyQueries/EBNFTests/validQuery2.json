@@ -1,0 +1,25 @@
+{
+	"title": "should successfully perform a query with wildcards in the SCOMPARISON",
+	"input":  {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"courses_avg": 91
+					}
+				},
+				{
+					"IS": {
+						"courses_dept": "*oo*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_id", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": [{"courses_dept":"zool","courses_id":"549","courses_avg":91.67},{"courses_dept":"zool","courses_id":"549","courses_avg":91.67},{"courses_dept":"zool","courses_id":"549","courses_avg":92},{"courses_dept":"zool","courses_id":"503","courses_avg":92.1},{"courses_dept":"zool","courses_id":"503","courses_avg":92.1},{"courses_dept":"zool","courses_id":"503","courses_avg":92.71},{"courses_dept":"zool","courses_id":"503","courses_avg":92.71}],
+	"errorExpected": false
+}

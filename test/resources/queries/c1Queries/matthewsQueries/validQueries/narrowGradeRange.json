@@ -1,0 +1,146 @@
+{
+  "title": "Narrow grade range",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "LT": {
+            "courses_avg": 52
+          }
+        },
+        {
+          "GT": {
+            "courses_avg": 48
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id",
+        "courses_year"
+      ],
+      "ORDER": "courses_year"
+    }
+  },
+  "with": [
+    {
+      "courses_id": "311",
+      "courses_year": 1900
+    },
+    {
+      "courses_id": "231",
+      "courses_year": 1900
+    },
+    {
+      "courses_id": "293",
+      "courses_year": 1900
+    },
+    {
+      "courses_id": "344",
+      "courses_year": 1900
+    },
+    {
+      "courses_id": "231",
+      "courses_year": 2007
+    },
+    {
+      "courses_id": "315",
+      "courses_year": 2008
+    },
+    {
+      "courses_id": "184",
+      "courses_year": 2008
+    },
+    {
+      "courses_id": "184",
+      "courses_year": 2008
+    },
+    {
+      "courses_id": "180",
+      "courses_year": 2008
+    },
+    {
+      "courses_id": "180",
+      "courses_year": 2008
+    },
+    {
+      "courses_id": "311",
+      "courses_year": 2008
+    },
+    {
+      "courses_id": "231",
+      "courses_year": 2008
+    },
+    {
+      "courses_id": "315",
+      "courses_year": 2009
+    },
+    {
+      "courses_id": "110",
+      "courses_year": 2009
+    },
+    {
+      "courses_id": "102",
+      "courses_year": 2009
+    },
+    {
+      "courses_id": "293",
+      "courses_year": 2009
+    },
+    {
+      "courses_id": "344",
+      "courses_year": 2010
+    },
+    {
+      "courses_id": "406",
+      "courses_year": 2011
+    },
+    {
+      "courses_id": "435",
+      "courses_year": 2012
+    },
+    {
+      "courses_id": "352",
+      "courses_year": 2012
+    },
+    {
+      "courses_id": "474",
+      "courses_year": 2012
+    },
+    {
+      "courses_id": "445",
+      "courses_year": 2013
+    },
+    {
+      "courses_id": "441",
+      "courses_year": 2013
+    },
+    {
+      "courses_id": "398",
+      "courses_year": 2013
+    },
+    {
+      "courses_id": "200",
+      "courses_year": 2014
+    },
+    {
+      "courses_id": "200",
+      "courses_year": 2014
+    },
+    {
+      "courses_id": "200",
+      "courses_year": 2014
+    },
+    {
+      "courses_id": "200",
+      "courses_year": 2015
+    },
+    {
+      "courses_id": "200",
+      "courses_year": 2016
+    }
+  ],
+  "errorExpected": false
+}
+

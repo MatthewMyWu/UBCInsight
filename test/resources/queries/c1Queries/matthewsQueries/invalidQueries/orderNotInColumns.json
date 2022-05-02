@@ -1,0 +1,19 @@
+{
+  "title": "'ORDER' not included in 'OPTIONS'",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}
+

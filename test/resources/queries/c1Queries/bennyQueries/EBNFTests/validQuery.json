@@ -1,0 +1,37 @@
+{
+	"title": "should perform a query with single element in the AND and OR, in the right order",
+	"input":  {
+		"WHERE": {
+			"AND": [
+				{
+					"OR": [
+						{
+							"EQ": {
+								"courses_avg": 50
+							}
+						}
+					]
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_dept"
+		}
+	},
+	"with": [
+		{
+			"courses_dept": "busi",
+			"courses_avg": 50
+		},
+		{
+			"courses_dept": "chbe",
+			"courses_avg": 50
+		},
+		{
+			"courses_dept": "psyc",
+			"courses_avg": 50
+		}
+	],
+	"errorExpected": false
+}

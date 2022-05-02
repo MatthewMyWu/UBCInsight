@@ -1,0 +1,21 @@
+{
+  "title": "Key in OPTIONS: is invalid",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 95
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg",
+        "courses_asdf"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}
+

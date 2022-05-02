@@ -1,0 +1,25 @@
+{
+	"title": "Testing Double negation",
+	"input": {
+		"WHERE": {
+			"NOT": {
+				"NOT": {
+					"IS": {
+						"courses_uuid": "500"
+					}
+				}
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_avg",
+				"courses_instructor",
+				"courses_uuid"
+			],
+			"ORDER": "courses_instructor"
+		}
+	},
+	"with": [{"courses_dept":"phys","courses_avg":93.31,"courses_instructor":"","courses_uuid":"500"}],
+	"errorExpected": false
+}

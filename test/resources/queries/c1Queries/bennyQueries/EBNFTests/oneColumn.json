@@ -1,0 +1,16 @@
+{
+	"title": "should successfully perform query with exactly one column",
+	"input":  {
+		"WHERE": {
+			"LT": {
+				"courses_avg": 42
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept"],
+			"ORDER": "courses_dept"
+		}
+	},
+	"with": [{"courses_dept":"busi"},{"courses_dept":"busi"},{"courses_dept":"civl"},{"courses_dept":"educ"},{"courses_dept":"educ"},{"courses_dept":"fopr"},{"courses_dept":"frst"},{"courses_dept":"hist"},{"courses_dept":"lfs"},{"courses_dept":"lfs"},{"courses_dept":"phil"},{"courses_dept":"wood"}],
+	"errorExpected": false
+}

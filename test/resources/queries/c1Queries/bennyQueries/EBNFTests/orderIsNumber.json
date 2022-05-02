@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because the ordering is a number instead of a key",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": 0
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

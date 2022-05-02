@@ -1,0 +1,27 @@
+{
+  "title": "Querying invalid dataset",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "LT": {
+            "definitelyNotAdded_year": 2020
+          }
+        },
+        {
+          "GT": {
+            "definitelyNotAdded__year": 2015
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "definitelyNotAdded_year"
+      ],
+      "ORDER": "definitelyNotAdded_year"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}

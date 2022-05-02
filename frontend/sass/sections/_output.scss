@@ -1,0 +1,19 @@
+.output {
+	display: grid;
+	grid-auto-rows: auto;
+	grid-auto-flow: row;
+
+	table {
+		margin: 0 auto;
+	}
+
+	table, td, th {
+		border: black 2px solid;
+		border-collapse: collapse;
+		table-layout: fixed;
+	}
+
+	td, th {
+		padding: 5px;
+	}
+}

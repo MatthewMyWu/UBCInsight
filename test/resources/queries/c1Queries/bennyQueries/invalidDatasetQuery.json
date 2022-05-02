@@ -1,0 +1,16 @@
+{
+	"title": "should reject a query that references a dataset that is not added",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"hello_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["hello_avg", "hello_dept"],
+			"ORDER": "hello_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

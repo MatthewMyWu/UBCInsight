@@ -1,0 +1,46 @@
+{
+	"title": "TRANSFORM is provided instead of TRANSFORMATIONS",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 40
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"countType"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"countType",
+					"rooms_shortname"
+				]
+			}
+		},
+		"TRANSFORM": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"countType": {
+						"COUNT": "rooms_type"
+					}
+				}
+			]
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

@@ -1,0 +1,31 @@
+{
+	"title": "Keys in ORDER is empty array",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 300
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_name",
+				"rooms_seats"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": []
+			}
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Keys are (partially) lowercase",
+  "input": {
+    "WHERE": {
+      "And": [
+        {
+          "LT": {
+            "courses_year": 2020
+          }
+        },
+        {
+          "GT": {
+            "courses_year": 2015
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "Columns": [
+        "courses_dept",
+        "courses_avg",
+        "courses_pass",
+        "rooms_fail",
+        "courses_audit",
+        "courses_id"
+      ],
+      "Order": "courses_year"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}

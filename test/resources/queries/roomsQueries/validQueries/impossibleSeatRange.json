@@ -1,0 +1,28 @@
+{
+	"title": "Test an impossible seats range",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"rooms_seats": 97
+					}
+				},
+				{
+					"EQ": {
+						"rooms_seats": 95
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_seats"
+			],
+			"ORDER": "rooms_seats"
+		}
+	},
+	"with": [],
+	"errorExpected": false
+}
+

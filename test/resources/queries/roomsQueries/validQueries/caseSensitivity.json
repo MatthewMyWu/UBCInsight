@@ -1,0 +1,19 @@
+{
+	"title": "Should return empty set because fullname field is lowercase",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_fullname": "math"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_fullname",
+				"rooms_shortname"
+			],
+			"ORDER": "rooms_fullname"
+		}
+	},
+	"with": [],
+	"errorExpected": false
+}

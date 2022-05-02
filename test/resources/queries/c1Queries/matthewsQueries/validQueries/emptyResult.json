@@ -1,0 +1,25 @@
+{
+  "title": "Return an empty array",
+  "input": {
+    "WHERE": {
+      "LT": {
+        "courses_avg": 0
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg",
+        "courses_pass",
+        "courses_instructor",
+        "courses_id",
+        "courses_year",
+        "courses_audit"
+      ],
+      "ORDER": "courses_year"
+    }
+  },
+  "with": [],
+  "errorExpected": false
+}
+

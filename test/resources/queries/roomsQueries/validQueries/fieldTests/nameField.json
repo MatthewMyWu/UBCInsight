@@ -1,0 +1,21 @@
+{
+	"title": "Field test for name field",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_name": "WESB_100"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_number",
+				"rooms_fullname",
+				"rooms_name"
+			],
+			"ORDER": "rooms_name"
+		}
+	},
+	"with": [{"rooms_number":"100","rooms_fullname":"Wesbrook","rooms_name":"WESB_100"}],
+	"errorExpected": false
+}
+

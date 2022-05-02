@@ -1,0 +1,15 @@
+{
+	"title": "should successfully perform simple query on the data ordered by a sfield",
+	"input": {
+		"WHERE": {
+			"EQ": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_dept"
+		}
+	},
+	"with": [{"courses_dept":"crwr","courses_avg":97},{"courses_dept":"epse","courses_avg":97},{"courses_dept":"psyc","courses_avg":97}]
+}

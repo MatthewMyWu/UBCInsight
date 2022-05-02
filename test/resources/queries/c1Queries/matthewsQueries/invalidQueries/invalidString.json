@@ -1,0 +1,20 @@
+{
+  "title": "Number provided where string is expected",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_uuid": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}
+

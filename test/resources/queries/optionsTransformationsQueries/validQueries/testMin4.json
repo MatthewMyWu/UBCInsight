@@ -1,0 +1,51 @@
+{
+	"title": "Testing minimum course averages",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_dept": "*s*"
+					}
+				},
+				{
+					"IS": {
+						"courses_dept": "*f*"
+					}
+				},
+				{
+					"IS": {
+						"courses_dept": "*r*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"minAvg"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"minAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"minAvg": {
+						"MIN": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"with": [{"courses_dept":"frst","courses_id":"202","minAvg":0},{"courses_dept":"frst","courses_id":"231","minAvg":46.59},{"courses_dept":"frst","courses_id":"311","minAvg":51.5},{"courses_dept":"frst","courses_id":"319","minAvg":58},{"courses_dept":"frst","courses_id":"421","minAvg":61.5},{"courses_dept":"frst","courses_id":"232","minAvg":62.33},{"courses_dept":"frst","courses_id":"308","minAvg":62.8},{"courses_dept":"frst","courses_id":"200","minAvg":64.06},{"courses_dept":"frst","courses_id":"385","minAvg":64.74},{"courses_dept":"frst","courses_id":"415","minAvg":67.37},{"courses_dept":"frst","courses_id":"210","minAvg":67.52},{"courses_dept":"frst","courses_id":"239","minAvg":67.75},{"courses_dept":"frst","courses_id":"444","minAvg":68.24},{"courses_dept":"frst","courses_id":"386","minAvg":68.59},{"courses_dept":"frst","courses_id":"303","minAvg":69.44},{"courses_dept":"frst","courses_id":"201","minAvg":70.36},{"courses_dept":"frst","courses_id":"307","minAvg":70.52},{"courses_dept":"frst","courses_id":"395","minAvg":71.21},{"courses_dept":"frst","courses_id":"304","minAvg":71.38},{"courses_dept":"frst","courses_id":"211","minAvg":71.56},{"courses_dept":"frst","courses_id":"399","minAvg":71.9},{"courses_dept":"frst","courses_id":"339","minAvg":72.11},{"courses_dept":"frst","courses_id":"443","minAvg":72.11},{"courses_dept":"frst","courses_id":"424","minAvg":72.4},{"courses_dept":"frst","courses_id":"318","minAvg":72.67},{"courses_dept":"frst","courses_id":"310","minAvg":73.11},{"courses_dept":"frst","courses_id":"100","minAvg":73.14},{"courses_dept":"frst","courses_id":"320","minAvg":73.31},{"courses_dept":"frst","courses_id":"430","minAvg":73.4},{"courses_dept":"frst","courses_id":"497","minAvg":74.19},{"courses_dept":"frst","courses_id":"270","minAvg":74.47},{"courses_dept":"frst","courses_id":"495","minAvg":74.85},{"courses_dept":"frst","courses_id":"305","minAvg":75.17},{"courses_dept":"frst","courses_id":"523","minAvg":75.2},{"courses_dept":"frst","courses_id":"452","minAvg":75.56},{"courses_dept":"frst","courses_id":"309","minAvg":75.62},{"courses_dept":"frst","courses_id":"432","minAvg":76},{"courses_dept":"frst","courses_id":"439","minAvg":76.12},{"courses_dept":"frst","courses_id":"436","minAvg":76.75},{"courses_dept":"frst","courses_id":"498","minAvg":78.75},{"courses_dept":"frst","courses_id":"524","minAvg":79.5},{"courses_dept":"frst","courses_id":"530","minAvg":79.64},{"courses_dept":"frst","courses_id":"408","minAvg":80.43},{"courses_dept":"frst","courses_id":"556","minAvg":80.71},{"courses_dept":"frst","courses_id":"351","minAvg":81},{"courses_dept":"frst","courses_id":"302","minAvg":81.05},{"courses_dept":"frst","courses_id":"512","minAvg":81.11},{"courses_dept":"frst","courses_id":"576","minAvg":81.3},{"courses_dept":"frst","courses_id":"544","minAvg":81.33},{"courses_dept":"frst","courses_id":"547","minAvg":81.5},{"courses_dept":"frst","courses_id":"588","minAvg":81.67},{"courses_dept":"frst","courses_id":"490","minAvg":82.5},{"courses_dept":"frst","courses_id":"516","minAvg":83.25},{"courses_dept":"frst","courses_id":"558","minAvg":83.25},{"courses_dept":"frst","courses_id":"545","minAvg":83.46},{"courses_dept":"frst","courses_id":"553","minAvg":84.18},{"courses_dept":"frst","courses_id":"557","minAvg":84.53},{"courses_dept":"frst","courses_id":"590","minAvg":85.2},{"courses_dept":"frst","courses_id":"546","minAvg":85.29},{"courses_dept":"frst","courses_id":"413","minAvg":85.71},{"courses_dept":"frst","courses_id":"543","minAvg":86.18},{"courses_dept":"frst","courses_id":"522","minAvg":86.45},{"courses_dept":"frst","courses_id":"551","minAvg":86.63},{"courses_dept":"frst","courses_id":"559","minAvg":87.09},{"courses_dept":"frst","courses_id":"508","minAvg":87.75},{"courses_dept":"frst","courses_id":"519","minAvg":87.91},{"courses_dept":"frst","courses_id":"529","minAvg":89.5},{"courses_dept":"frst","courses_id":"503","minAvg":90},{"courses_dept":"frst","courses_id":"411","minAvg":90.13},{"courses_dept":"frst","courses_id":"534","minAvg":90.18},{"courses_dept":"frst","courses_id":"560","minAvg":92.27},{"courses_dept":"frst","courses_id":"562","minAvg":96.36}]
+}

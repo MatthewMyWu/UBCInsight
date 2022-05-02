@@ -1,0 +1,33 @@
+{
+  "title": "WHERE: queries more than one dataset",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "LT": {
+            "courses_year": 2020
+          }
+        },
+        {
+          "GT": {
+            "rooms_year": 2015
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg",
+        "courses_pass",
+        "courses_fail",
+        "courses_audit",
+        "courses_id",
+        "courses_year"
+      ],
+      "ORDER": "courses_year"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}

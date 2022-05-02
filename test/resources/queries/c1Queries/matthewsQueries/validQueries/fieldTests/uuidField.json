@@ -1,0 +1,40 @@
+{
+  "title": "Uuid field",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_uuid": "500"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_pass",
+        "courses_fail",
+        "courses_audit",
+        "courses_year",
+        "courses_dept",
+        "courses_id",
+        "courses_instructor",
+        "courses_title",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_uuid"
+    }
+  },
+  "with": [
+    {
+      "courses_avg": 93.31,
+      "courses_pass": 29,
+      "courses_fail": 0,
+      "courses_audit": 0,
+      "courses_year": 1900,
+      "courses_dept": "phys",
+      "courses_id": "501",
+      "courses_instructor": "",
+      "courses_title": "quantum mech ii",
+      "courses_uuid": "500"
+    }
+  ],
+  "errorExpected": false
+}

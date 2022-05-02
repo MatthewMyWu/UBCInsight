@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because SCOMPARISON has a mkey afterwards",
+	"input":  {
+		"WHERE": {
+			"IS": {
+				"courses_avg": "hello"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

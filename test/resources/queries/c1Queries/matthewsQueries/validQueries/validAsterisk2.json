@@ -1,0 +1,181 @@
+{
+  "title": "Testing asterisk on left side of input",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_instructor": "*patrice"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_instructor",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "with": [
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 66.34
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 67.16
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 68.22
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 68.94
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 69.4
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 69.95
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 70.92
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 70.95
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 71.24
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 71.28
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 71.45
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 71.62
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 71.94
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 72.19
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 72.53
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 73.09
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 73.31
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 73.36
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 73.49
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 73.62
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 73.83
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 74.04
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 74.06
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 74.26
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 74.29
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 75.34
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 76.06
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 76.65
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 79
+    },
+    {
+      "courses_dept": "cpsc",
+      "courses_instructor": "belleville, patrice",
+      "courses_avg": 83.41
+    },
+    {
+      "courses_dept": "midw",
+      "courses_instructor": "latka, patrice",
+      "courses_avg": 85.9
+    },
+    {
+      "courses_dept": "midw",
+      "courses_instructor": "latka, patrice",
+      "courses_avg": 86
+    }
+  ],
+  "errorExpected": false
+}

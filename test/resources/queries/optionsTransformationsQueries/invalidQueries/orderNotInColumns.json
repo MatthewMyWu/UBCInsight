@@ -1,0 +1,36 @@
+{
+	"title": "Field in ORDER is not in COLUMNS",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 100
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"rooms_name",
+				"rooms_seats",
+				"rooms_lon"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"rooms_shortname", "rooms_fullname", "rooms_seats", "rooms_name", "rooms_lat"
+				]
+			}
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

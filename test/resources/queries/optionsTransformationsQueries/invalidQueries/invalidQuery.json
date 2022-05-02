@@ -1,0 +1,46 @@
+{
+	"title": "TRANSFORMATIONS key is lowercase",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 40
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"countType"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"countType",
+					"rooms_shortname"
+				]
+			}
+		},
+		"transformations": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"countType": {
+						"COUNT": "rooms_type"
+					}
+				}
+			]
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

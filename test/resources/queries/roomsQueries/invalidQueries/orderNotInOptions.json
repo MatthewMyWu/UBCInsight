@@ -1,0 +1,18 @@
+{
+	"title": "'ORDER' not included in 'OPTIONS'",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_seats": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_seats"
+			],
+			"ORDER": "rooms_name"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

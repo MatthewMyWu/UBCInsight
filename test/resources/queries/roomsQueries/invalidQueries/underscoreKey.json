@@ -1,0 +1,20 @@
+{
+	"title": "underscore in id",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"room_s_seats": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"rooms_name"
+			],
+			"ORDER": "rooms_name"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

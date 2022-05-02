@@ -1,0 +1,17 @@
+{
+	"title": "should reject query where MCOMPARISON has multiple keys inside it",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97,
+				"courses_pass": -1
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

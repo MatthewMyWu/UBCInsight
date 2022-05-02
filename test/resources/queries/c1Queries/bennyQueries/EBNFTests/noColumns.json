@@ -1,0 +1,15 @@
+{
+	"title": "should reject query because no columns are listed",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": []
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

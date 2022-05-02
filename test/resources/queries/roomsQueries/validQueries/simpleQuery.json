@@ -1,0 +1,20 @@
+{
+	"title": "Simple query for rooms",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_number": "100"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_number",
+				"rooms_fullname"
+			],
+			"ORDER": "rooms_fullname"
+		}
+	},
+	"with": [{"rooms_number":"100","rooms_fullname":"Geography"},{"rooms_number":"100","rooms_fullname":"Hebb"},{"rooms_number":"100","rooms_fullname":"Mathematics"},{"rooms_number":"100","rooms_fullname":"Neville Scarfe"},{"rooms_number":"100","rooms_fullname":"Wesbrook"}],
+	"errorExpected": false
+}
+

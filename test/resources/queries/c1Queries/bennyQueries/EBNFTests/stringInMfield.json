@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because mfield has a string value",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_avg": "invalid_value"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

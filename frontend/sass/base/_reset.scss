@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    margin: 20px 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+    .desktop {
+        display: none !important;
+    }
+}

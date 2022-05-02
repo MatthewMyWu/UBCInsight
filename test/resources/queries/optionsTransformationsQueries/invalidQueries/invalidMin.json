@@ -1,0 +1,36 @@
+{
+	"title": "Attempting minimum with string field",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"courses_title": "*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"minID"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"minID"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"minID": {
+						"MIN": "courses_id"
+					}
+				}
+			]
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

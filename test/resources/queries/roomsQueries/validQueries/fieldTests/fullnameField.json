@@ -1,0 +1,20 @@
+{
+	"title": "Field test for fullname field",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_fullname": "Geography"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_number",
+				"rooms_fullname"
+			],
+			"ORDER": "rooms_fullname"
+		}
+	},
+	"with": [{"rooms_number":"100","rooms_fullname":"Geography"},{"rooms_number":"101","rooms_fullname":"Geography"},{"rooms_number":"147","rooms_fullname":"Geography"},{"rooms_number":"200","rooms_fullname":"Geography"},{"rooms_number":"201","rooms_fullname":"Geography"},{"rooms_number":"212","rooms_fullname":"Geography"},{"rooms_number":"214","rooms_fullname":"Geography"},{"rooms_number":"242","rooms_fullname":"Geography"}],
+	"errorExpected": false
+}
+

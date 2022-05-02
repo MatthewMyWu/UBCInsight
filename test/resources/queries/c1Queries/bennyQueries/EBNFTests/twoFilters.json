@@ -1,0 +1,19 @@
+{
+	"title": "should reject query because WHERE has two filters inside as an object",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 91
+			},
+			"IS": {
+				"courses_dept": "*o*o*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_id", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

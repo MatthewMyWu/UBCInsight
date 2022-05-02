@@ -1,0 +1,57 @@
+{
+	"title": "Creating multiple Apply using MAX, MIN, and AVG",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 40
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"maxLatitude",
+				"minLongitude",
+				"avgSeats"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"maxLatitude", "minLongitude", "avgSeats"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"maxLatitude": {
+						"MAX": "rooms_lat"
+					}
+				},
+				{
+					"minLongitude": {
+						"MIN": "rooms_lon"
+					}
+				},
+				{
+					"avgSeats": {
+						"AVG": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"with": [{"rooms_shortname":"FSC","maxLatitude":49.26044,"minLongitude":-123.24886,"avgSeats":62.1},{"rooms_shortname":"OSBO","maxLatitude":49.26047,"minLongitude":-123.24467,"avgSeats":241},{"rooms_shortname":"ORCH","maxLatitude":49.26048,"minLongitude":-123.24944,"avgSeats":38.69},{"rooms_shortname":"MCML","maxLatitude":49.26114,"minLongitude":-123.25027,"avgSeats":30.16},{"rooms_shortname":"DMP","maxLatitude":49.26125,"minLongitude":-123.24807,"avgSeats":88},{"rooms_shortname":"FORW","maxLatitude":49.26176,"minLongitude":-123.25179,"avgSeats":47.33},{"rooms_shortname":"MCLD","maxLatitude":49.26176,"minLongitude":-123.24935,"avgSeats":83.83},{"rooms_shortname":"CIRS","maxLatitude":49.26207,"minLongitude":-123.25314,"avgSeats":426},{"rooms_shortname":"EOSM","maxLatitude":49.26228,"minLongitude":-123.25198,"avgSeats":50},{"rooms_shortname":"CHBE","maxLatitude":49.26228,"minLongitude":-123.24718,"avgSeats":118},{"rooms_shortname":"PHRM","maxLatitude":49.26229,"minLongitude":-123.24342,"avgSeats":48.91},{"rooms_shortname":"LSC","maxLatitude":49.26236,"minLongitude":-123.24494,"avgSeats":275},{"rooms_shortname":"CEME","maxLatitude":49.26273,"minLongitude":-123.24894,"avgSeats":48.17},{"rooms_shortname":"ESB","maxLatitude":49.26274,"minLongitude":-123.25224,"avgSeats":193.33},{"rooms_shortname":"SWNG","maxLatitude":49.26293,"minLongitude":-123.25431,"avgSeats":64.59},{"rooms_shortname":"AERL","maxLatitude":49.26372,"minLongitude":-123.25099,"avgSeats":144},{"rooms_shortname":"SCRF","maxLatitude":49.26398,"minLongitude":-123.2531,"avgSeats":45.64},{"rooms_shortname":"PCOH","maxLatitude":49.264,"minLongitude":-123.2559,"avgSeats":30.86},{"rooms_shortname":"FNH","maxLatitude":49.26414,"minLongitude":-123.24959,"avgSeats":56},{"rooms_shortname":"SPPH","maxLatitude":49.2642,"minLongitude":-123.24842,"avgSeats":27.67},{"rooms_shortname":"SOWK","maxLatitude":49.2643,"minLongitude":-123.25505,"avgSeats":28},{"rooms_shortname":"WOOD","maxLatitude":49.26478,"minLongitude":-123.24673,"avgSeats":85.07},{"rooms_shortname":"BIOL","maxLatitude":49.26479,"minLongitude":-123.25249,"avgSeats":84},{"rooms_shortname":"ANGU","maxLatitude":49.26486,"minLongitude":-123.25364,"avgSeats":55.21},{"rooms_shortname":"WESB","maxLatitude":49.26517,"minLongitude":-123.24937,"avgSeats":213.5},{"rooms_shortname":"FRDM","maxLatitude":49.26541,"minLongitude":-123.24608,"avgSeats":160},{"rooms_shortname":"LSK","maxLatitude":49.26545,"minLongitude":-123.25533,"avgSeats":126.25},{"rooms_shortname":"CHEM","maxLatitude":49.2659,"minLongitude":-123.25308,"avgSeats":152.17},{"rooms_shortname":"GEOG","maxLatitude":49.26605,"minLongitude":-123.25623,"avgSeats":77.38},{"rooms_shortname":"MATX","maxLatitude":49.266089,"minLongitude":-123.254816,"avgSeats":106},{"rooms_shortname":"HEBB","maxLatitude":49.2661,"minLongitude":-123.25165,"avgSeats":134.25},{"rooms_shortname":"HENN","maxLatitude":49.26627,"minLongitude":-123.25374,"avgSeats":109.67},{"rooms_shortname":"MATH","maxLatitude":49.266463,"minLongitude":-123.255534,"avgSeats":95},{"rooms_shortname":"AUDX","maxLatitude":49.2666,"minLongitude":-123.25655,"avgSeats":20.5},{"rooms_shortname":"IBLC","maxLatitude":49.26766,"minLongitude":-123.2521,"avgSeats":31.65},{"rooms_shortname":"LASR","maxLatitude":49.26767,"minLongitude":-123.25583,"avgSeats":54.17},{"rooms_shortname":"BUCH","maxLatitude":49.26826,"minLongitude":-123.25468,"avgSeats":59.49},{"rooms_shortname":"SRC","maxLatitude":49.2683,"minLongitude":-123.24894,"avgSeats":299},{"rooms_shortname":"BRKX","maxLatitude":49.26862,"minLongitude":-123.25237,"avgSeats":47},{"rooms_shortname":"UCLL","maxLatitude":49.26867,"minLongitude":-123.25692,"avgSeats":44.33},{"rooms_shortname":"ANSO","maxLatitude":49.26958,"minLongitude":-123.25741,"avgSeats":46.5},{"rooms_shortname":"ALRD","maxLatitude":49.2699,"minLongitude":-123.25318,"avgSeats":45.6},{"rooms_shortname":"IONA","maxLatitude":49.27106,"minLongitude":-123.25042,"avgSeats":75}],
+	"errorExpected": false
+}

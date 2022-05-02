@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because the ordering is not one of the columns",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_id"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

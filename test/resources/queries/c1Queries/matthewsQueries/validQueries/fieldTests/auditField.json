@@ -1,0 +1,141 @@
+{
+  "title": "Audit field",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_audit": 10
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_audit",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_uuid"
+    }
+  },
+  "with": [
+    {
+      "courses_audit": 12,
+      "courses_uuid": "10585"
+    },
+    {
+      "courses_audit": 12,
+      "courses_uuid": "10590"
+    },
+    {
+      "courses_audit": 14,
+      "courses_uuid": "10597"
+    },
+    {
+      "courses_audit": 12,
+      "courses_uuid": "18254"
+    },
+    {
+      "courses_audit": 12,
+      "courses_uuid": "18255"
+    },
+    {
+      "courses_audit": 23,
+      "courses_uuid": "21789"
+    },
+    {
+      "courses_audit": 12,
+      "courses_uuid": "21795"
+    },
+    {
+      "courses_audit": 18,
+      "courses_uuid": "21801"
+    },
+    {
+      "courses_audit": 13,
+      "courses_uuid": "21808"
+    },
+    {
+      "courses_audit": 13,
+      "courses_uuid": "35272"
+    },
+    {
+      "courses_audit": 12,
+      "courses_uuid": "52864"
+    },
+    {
+      "courses_audit": 11,
+      "courses_uuid": "59750"
+    },
+    {
+      "courses_audit": 11,
+      "courses_uuid": "59751"
+    },
+    {
+      "courses_audit": 11,
+      "courses_uuid": "62410"
+    },
+    {
+      "courses_audit": 14,
+      "courses_uuid": "62411"
+    },
+    {
+      "courses_audit": 18,
+      "courses_uuid": "62474"
+    },
+    {
+      "courses_audit": 21,
+      "courses_uuid": "62475"
+    },
+    {
+      "courses_audit": 15,
+      "courses_uuid": "68836"
+    },
+    {
+      "courses_audit": 15,
+      "courses_uuid": "71594"
+    },
+    {
+      "courses_audit": 11,
+      "courses_uuid": "71597"
+    },
+    {
+      "courses_audit": 19,
+      "courses_uuid": "71600"
+    },
+    {
+      "courses_audit": 19,
+      "courses_uuid": "71604"
+    },
+    {
+      "courses_audit": 15,
+      "courses_uuid": "71608"
+    },
+    {
+      "courses_audit": 12,
+      "courses_uuid": "71611"
+    },
+    {
+      "courses_audit": 21,
+      "courses_uuid": "76489"
+    },
+    {
+      "courses_audit": 19,
+      "courses_uuid": "76495"
+    },
+    {
+      "courses_audit": 20,
+      "courses_uuid": "76505"
+    },
+    {
+      "courses_audit": 17,
+      "courses_uuid": "76509"
+    },
+    {
+      "courses_audit": 19,
+      "courses_uuid": "97727"
+    },
+    {
+      "courses_audit": 19,
+      "courses_uuid": "97728"
+    }
+  ],
+  "errorExpected": false
+}
+

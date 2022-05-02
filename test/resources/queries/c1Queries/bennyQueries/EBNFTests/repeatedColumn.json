@@ -1,0 +1,18 @@
+{
+	"title": "should reject a query that references a dataset that is not added",
+	"input": {
+		"WHERE": {
+			"EQ": {
+				"courses_avg": 1
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_avg", "courses_avg", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": [{
+		"courses_avg": 1
+	}],
+	"errorExpected": false
+}

@@ -1,0 +1,57 @@
+{
+	"title": "Creating multiple Apply fields using MAX, MIN, and SUM",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 300
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"maxSeats",
+				"minSeats",
+				"sumSeats"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"sumSeats", "minSeats", "maxSeats"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"maxSeats": {
+						"MAX": "rooms_seats"
+					}
+				},
+				{
+					"minSeats": {
+						"MIN": "rooms_seats"
+					}
+				},
+				{
+					"sumSeats": {
+						"SUM": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"with": [{"rooms_shortname":"ANGU","maxSeats":260,"minSeats":16,"sumSeats":1546},{"rooms_shortname":"BUCH","maxSeats":108,"minSeats":18,"sumSeats":1473},{"rooms_shortname":"SWNG","maxSeats":190,"minSeats":27,"sumSeats":1421},{"rooms_shortname":"WOOD","maxSeats":503,"minSeats":10,"sumSeats":1095},{"rooms_shortname":"SRC","maxSeats":299,"minSeats":299,"sumSeats":897},{"rooms_shortname":"LSC","maxSeats":350,"minSeats":125,"sumSeats":825},{"rooms_shortname":"SCRF","maxSeats":60,"minSeats":20,"sumSeats":724},{"rooms_shortname":"IBLC","maxSeats":154,"minSeats":8,"sumSeats":538},{"rooms_shortname":"PHRM","maxSeats":236,"minSeats":7,"sumSeats":538},{"rooms_shortname":"HEBB","maxSeats":375,"minSeats":54,"sumSeats":537},{"rooms_shortname":"LSK","maxSeats":205,"minSeats":42,"sumSeats":505},{"rooms_shortname":"MCLD","maxSeats":136,"minSeats":40,"sumSeats":503},{"rooms_shortname":"OSBO","maxSeats":442,"minSeats":40,"sumSeats":482},{"rooms_shortname":"DMP","maxSeats":160,"minSeats":40,"sumSeats":440},{"rooms_shortname":"ESB","maxSeats":350,"minSeats":80,"sumSeats":430},{"rooms_shortname":"CIRS","maxSeats":426,"minSeats":426,"sumSeats":426},{"rooms_shortname":"GEOG","maxSeats":100,"minSeats":21,"sumSeats":394},{"rooms_shortname":"CHBE","maxSeats":200,"minSeats":60,"sumSeats":354},{"rooms_shortname":"WESB","maxSeats":325,"minSeats":325,"sumSeats":325},{"rooms_shortname":"MCML","maxSeats":72,"minSeats":6,"sumSeats":299},{"rooms_shortname":"CEME","maxSeats":100,"minSeats":22,"sumSeats":289},{"rooms_shortname":"FSC","maxSeats":65,"minSeats":18,"sumSeats":272},{"rooms_shortname":"ORCH","maxSeats":72,"minSeats":16,"sumSeats":263},{"rooms_shortname":"ALRD","maxSeats":94,"minSeats":20,"sumSeats":228},{"rooms_shortname":"PCOH","maxSeats":40,"minSeats":24,"sumSeats":216},{"rooms_shortname":"SPPH","maxSeats":66,"minSeats":12,"sumSeats":166},{"rooms_shortname":"FRDM","maxSeats":160,"minSeats":160,"sumSeats":160},{"rooms_shortname":"MATH","maxSeats":60,"minSeats":48,"sumSeats":156},{"rooms_shortname":"IONA","maxSeats":100,"minSeats":50,"sumSeats":150},{"rooms_shortname":"FORW","maxSeats":63,"minSeats":35,"sumSeats":142},{"rooms_shortname":"UCLL","maxSeats":55,"minSeats":30,"sumSeats":133},{"rooms_shortname":"LASR","maxSeats":80,"minSeats":20,"sumSeats":120},{"rooms_shortname":"BIOL","maxSeats":76,"minSeats":16,"sumSeats":108},{"rooms_shortname":"HENN","maxSeats":36,"minSeats":30,"sumSeats":96},{"rooms_shortname":"ANSO","maxSeats":37,"minSeats":26,"sumSeats":96},{"rooms_shortname":"BRKX","maxSeats":70,"minSeats":24,"sumSeats":94},{"rooms_shortname":"EOSM","maxSeats":50,"minSeats":50,"sumSeats":50},{"rooms_shortname":"SOWK","maxSeats":16,"minSeats":12,"sumSeats":44},{"rooms_shortname":"AUDX","maxSeats":21,"minSeats":20,"sumSeats":41},{"rooms_shortname":"FNH","maxSeats":28,"minSeats":28,"sumSeats":28}],
+	"errorExpected": false
+}

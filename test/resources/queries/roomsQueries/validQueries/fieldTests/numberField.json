@@ -1,0 +1,21 @@
+{
+	"title": "Field test for number field",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_number": "100"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_fullname",
+				"rooms_number",
+				"rooms_name"
+			],
+			"ORDER": "rooms_number"
+		}
+	},
+	"with": [{"rooms_fullname":"Geography","rooms_number":"100","rooms_name":"GEOG_100"},{"rooms_fullname":"Hebb","rooms_number":"100","rooms_name":"HEBB_100"},{"rooms_fullname":"Mathematics","rooms_number":"100","rooms_name":"MATH_100"},{"rooms_fullname":"Neville Scarfe","rooms_number":"100","rooms_name":"SCRF_100"},{"rooms_fullname":"Wesbrook","rooms_number":"100","rooms_name":"WESB_100"}],
+	"errorExpected": false
+}
+

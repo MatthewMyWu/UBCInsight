@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because ID is missing",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"avg": 21
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["avg", "dept"],
+			"ORDER": "_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

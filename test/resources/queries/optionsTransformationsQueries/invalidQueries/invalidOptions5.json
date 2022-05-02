@@ -1,0 +1,28 @@
+{
+	"title": "Extra key in ORDER",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"courses_avg": 95
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_avg",
+				"courses_title"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": ["courses_avg",
+				"courses_title"],
+				"extraKey": "Beep Boop"
+			}
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

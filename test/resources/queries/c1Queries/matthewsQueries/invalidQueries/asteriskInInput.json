@@ -1,0 +1,20 @@
+{
+  "title": "Asterisk in input string",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_instructor": "*pa*trice*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_instructor",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}

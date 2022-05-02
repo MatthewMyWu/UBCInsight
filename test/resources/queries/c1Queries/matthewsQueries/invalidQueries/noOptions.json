@@ -1,0 +1,18 @@
+{
+  "title": "No options are provided",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}
+

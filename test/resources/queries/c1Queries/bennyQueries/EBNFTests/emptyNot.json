@@ -1,0 +1,14 @@
+{
+	"title": "should reject query because the NOT is an empty object",
+	"input":  {
+		"WHERE": {
+			"NOT": {}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

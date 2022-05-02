@@ -1,0 +1,25 @@
+{
+	"title": "ID is not included in OPTIONS keys",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"type"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"type"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_type"
+			],
+			"APPLY": []
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

@@ -1,0 +1,76 @@
+{
+	"title": "should successfully perform query on the data that uses all valid keys",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"EQ": {
+						"courses_avg": 4.5
+					}
+				},
+				{
+					"EQ": {
+						"courses_pass": 0
+					}
+				},
+				{
+					"EQ": {
+						"courses_fail": 4
+					}
+				},
+				{
+					"EQ": {
+						"courses_audit": 0
+					}
+				},
+				{
+					"EQ": {
+						"courses_year": 2013
+					}
+				},
+				{
+					"IS": {
+						"courses_dept": "fopr"
+					}
+				},
+				{
+					"IS": {
+						"courses_id": "362"
+					}
+				},
+				{
+					"IS": {
+						"courses_instructor": "bendickson, dennis"
+					}
+				},
+				{
+					"IS": {
+						"courses_title": "sustnbt&frst ops"
+					}
+				},
+				{
+					"IS": {
+						"courses_uuid": "84769"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"courses_avg",
+				"courses_instructor",
+				"courses_title",
+				"courses_pass",
+				"courses_fail",
+				"courses_audit",
+				"courses_uuid",
+				"courses_year"
+			],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": [{"courses_dept":"fopr","courses_id":"362","courses_avg":4.5,"courses_instructor":"bendickson, dennis","courses_title":"sustnbt&frst ops","courses_pass":0,"courses_fail":4,"courses_audit":0,"courses_uuid":"84769","courses_year":2013}],
+	"errorExpected": false
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Querying multiple datasets Between WITH: and OPTIONS:",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "LT": {
+            "courses_year": 2020
+          }
+        },
+        {
+          "GT": {
+            "courses_year": 2015
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_dept",
+        "rooms_avg",
+        "rooms_year"
+      ],
+      "ORDER": "rooms_year"
+    }
+  },
+  "with": "InsightError",
+  "errorExpected": true
+}

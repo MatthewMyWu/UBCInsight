@@ -1,0 +1,27 @@
+{
+	"title": "Testing Triple negation",
+	"input": {
+		"WHERE": {
+			"NOT": {
+				"NOT": {
+					"NOT": {
+						"GT": {
+							"courses_avg": 1
+						}
+					}
+				}
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_avg",
+				"courses_instructor",
+				"courses_uuid"
+			],
+			"ORDER": "courses_instructor"
+		}
+	},
+	"with": [{"courses_dept":"wood","courses_avg":1,"courses_instructor":"","courses_uuid":"49835"},{"courses_dept":"lfs","courses_avg":0,"courses_instructor":"","courses_uuid":"56403"},{"courses_dept":"lfs","courses_avg":0,"courses_instructor":"","courses_uuid":"56402"},{"courses_dept":"frst","courses_avg":0,"courses_instructor":"","courses_uuid":"89536"}],
+	"errorExpected": false
+}

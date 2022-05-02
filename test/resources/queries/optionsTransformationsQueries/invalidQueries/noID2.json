@@ -1,0 +1,25 @@
+{
+	"title": "ID is not included in OPTIONS and GROUP keys",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"type"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"type"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"type"
+			],
+			"APPLY": []
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

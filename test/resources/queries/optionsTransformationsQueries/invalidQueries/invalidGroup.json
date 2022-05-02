@@ -1,0 +1,30 @@
+{
+	"title": "Columns keys not in GROUP",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_name": "*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_name"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"rooms_name"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_type",
+				"rooms_furniture"
+			],
+			"APPLY": []
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

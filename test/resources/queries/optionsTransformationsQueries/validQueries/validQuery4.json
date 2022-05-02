@@ -1,0 +1,30 @@
+{
+	"title": "valid query with APPLY but no ORDER",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_name": "*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_type",
+				"sumSeats"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_type",
+				"rooms_furniture"
+			],
+			"APPLY": [
+				{
+					"sumSeats": {
+						"SUM": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"with": [{"rooms_type":"Case Style","sumSeats":1175},{"rooms_type":"Open Design General Purpose","sumSeats":2842},{"rooms_type":"Open Design General Purpose","sumSeats":448},{"rooms_type":"Small Group","sumSeats":2692},{"rooms_type":"Small Group","sumSeats":482},{"rooms_type":"Open Design General Purpose","sumSeats":90},{"rooms_type":"Tiered Large Group","sumSeats":6272},{"rooms_type":"Tiered Large Group","sumSeats":4450},{"rooms_type":"Case Style","sumSeats":216},{"rooms_type":"Case Style","sumSeats":134},{"rooms_type":"Open Design General Purpose","sumSeats":996},{"rooms_type":"Open Design General Purpose","sumSeats":24},{"rooms_type":"Small Group","sumSeats":520},{"rooms_type":"Tiered Large Group","sumSeats":78},{"rooms_type":"Tiered Large Group","sumSeats":1356},{"rooms_type":"Tiered Large Group","sumSeats":150},{"rooms_type":"","sumSeats":60},{"rooms_type":"TBD","sumSeats":929},{"rooms_type":"Active Learning","sumSeats":156},{"rooms_type":"Open Design General Purpose","sumSeats":75},{"rooms_type":"Active Learning","sumSeats":100},{"rooms_type":"Studio Lab","sumSeats":150},{"rooms_type":"Active Learning","sumSeats":16},{"rooms_type":"Small Group","sumSeats":58}]
+}

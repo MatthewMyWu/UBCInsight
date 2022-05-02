@@ -1,0 +1,13 @@
+{
+	"title": "should reject query because the OPTIONS is empty",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

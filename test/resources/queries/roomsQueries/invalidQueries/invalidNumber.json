@@ -1,0 +1,20 @@
+{
+	"title": "Number is provided where string is expected",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_name": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"rooms_name"
+			],
+			"ORDER": "rooms_name"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

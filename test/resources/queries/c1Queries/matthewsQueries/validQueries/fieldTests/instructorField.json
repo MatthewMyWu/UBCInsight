@@ -1,0 +1,28 @@
+{
+  "title": "Instructor field",
+  "input": {
+	  "WHERE": {
+		  "IS": {
+			  "courses_instructor": "kiczales, gregor"
+		  }
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "courses_avg",
+			  "courses_pass",
+			  "courses_fail",
+			  "courses_audit",
+			  "courses_year",
+			  "courses_dept",
+			  "courses_id",
+			  "courses_instructor",
+			  "courses_title",
+			  "courses_uuid"
+		  ],
+		  "ORDER": "courses_avg"
+	  }
+  },
+  "with": [{"courses_avg":70.11,"courses_pass":308,"courses_fail":59,"courses_audit":0,"courses_year":2013,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"49850"},{"courses_avg":70.75,"courses_pass":84,"courses_fail":25,"courses_audit":0,"courses_year":2010,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"72319"},{"courses_avg":70.78,"courses_pass":185,"courses_fail":46,"courses_audit":0,"courses_year":2015,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"62342"},{"courses_avg":71.07,"courses_pass":180,"courses_fail":38,"courses_audit":0,"courses_year":2014,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"1248"},{"courses_avg":71.4,"courses_pass":36,"courses_fail":6,"courses_audit":0,"courses_year":2009,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"46653"},{"courses_avg":72.58,"courses_pass":30,"courses_fail":3,"courses_audit":0,"courses_year":2009,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"46654"},{"courses_avg":73.13,"courses_pass":71,"courses_fail":11,"courses_audit":0,"courses_year":2014,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"1249"},{"courses_avg":73.53,"courses_pass":90,"courses_fail":12,"courses_audit":0,"courses_year":2011,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"61084"},{"courses_avg":74.24,"courses_pass":306,"courses_fail":40,"courses_audit":0,"courses_year":2012,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"83389"},{"courses_avg":76.98,"courses_pass":63,"courses_fail":2,"courses_audit":0,"courses_year":2010,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"72322"},{"courses_avg":77.11,"courses_pass":78,"courses_fail":4,"courses_audit":0,"courses_year":2011,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"63245"},{"courses_avg":77.43,"courses_pass":95,"courses_fail":7,"courses_audit":2,"courses_year":2012,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"43188"},{"courses_avg":77.69,"courses_pass":188,"courses_fail":19,"courses_audit":0,"courses_year":2011,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"61083"},{"courses_avg":84.91,"courses_pass":69,"courses_fail":1,"courses_audit":0,"courses_year":2015,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"62346"},{"courses_avg":85.11,"courses_pass":60,"courses_fail":1,"courses_audit":0,"courses_year":2014,"courses_dept":"cpsc","courses_id":"110","courses_instructor":"kiczales, gregor","courses_title":"comptn, progrmng","courses_uuid":"1254"}],
+  "errorExpected": false
+}
+

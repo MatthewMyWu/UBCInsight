@@ -1,0 +1,21 @@
+{
+	"title": "Query different datasets between WHERE and OPTIONS",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"courses_lon": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"rooms_name"
+			],
+			"ORDER": "rooms_name"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}
+

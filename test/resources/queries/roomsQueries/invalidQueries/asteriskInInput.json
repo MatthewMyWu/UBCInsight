@@ -1,0 +1,20 @@
+{
+	"title": "Asterisk in input string",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_shortname": "M*H"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"rooms_name"
+			],
+			"ORDER": "rooms_name"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

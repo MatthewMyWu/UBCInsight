@@ -1,0 +1,14 @@
+{
+	"title": "should reject query because the AND is an empty array",
+	"input": {
+		"WHERE": {
+			"AND": []
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_dept"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

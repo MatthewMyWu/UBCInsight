@@ -1,0 +1,539 @@
+{
+  "title": "Dept field",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "caps"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_year",
+        "courses_dept",
+        "courses_title"
+      ],
+      "ORDER": "courses_year"
+    }
+  },
+  "with": [
+    {
+      "courses_avg": 88.27,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "grad essay"
+    },
+    {
+      "courses_avg": 89.75,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "grad essay"
+    },
+    {
+      "courses_avg": 89.4,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "grad essay"
+    },
+    {
+      "courses_avg": 86.91,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv lab physiol"
+    },
+    {
+      "courses_avg": 87.75,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv lab physiol"
+    },
+    {
+      "courses_avg": 89.8,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv lab physiol"
+    },
+    {
+      "courses_avg": 86.63,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv neurophyl"
+    },
+    {
+      "courses_avg": 82.81,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv neurophyl"
+    },
+    {
+      "courses_avg": 84.5,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv neurophyl"
+    },
+    {
+      "courses_avg": 84.1,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "mam endocrinolgy"
+    },
+    {
+      "courses_avg": 85,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "mam endocrinolgy"
+    },
+    {
+      "courses_avg": 87.63,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "mam endocrinolgy"
+    },
+    {
+      "courses_avg": 89.38,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "renl&gastro phyl"
+    },
+    {
+      "courses_avg": 89.36,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "renl&gastro phyl"
+    },
+    {
+      "courses_avg": 84.91,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "renl&gastro phyl"
+    },
+    {
+      "courses_avg": 88.31,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "cardio&resp phyl"
+    },
+    {
+      "courses_avg": 88,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "cardio&resp phyl"
+    },
+    {
+      "courses_avg": 86.84,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "cardio&resp phyl"
+    },
+    {
+      "courses_avg": 84.03,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv cel&mol phys"
+    },
+    {
+      "courses_avg": 85.33,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv cel&mol phys"
+    },
+    {
+      "courses_avg": 85.97,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv cel&mol phys"
+    },
+    {
+      "courses_avg": 86.56,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "adv cel&mol phys"
+    },
+    {
+      "courses_avg": 70.31,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 73.38,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 69.53,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 71.47,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 69.71,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 80.71,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 75.76,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 74.45,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 74.34,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 74.7,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 79,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "hnrs human phyl"
+    },
+    {
+      "courses_avg": 88.14,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "hnrs human phyl"
+    },
+    {
+      "courses_avg": 88.86,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "hnrs human phyl"
+    },
+    {
+      "courses_avg": 70.52,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 68.4,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 71.27,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 69.58,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 69.65,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 85.89,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "biom rsrch skill"
+    },
+    {
+      "courses_avg": 84.71,
+      "courses_year": 1900,
+      "courses_dept": "caps",
+      "courses_title": "biom rsrch skill"
+    },
+    {
+      "courses_avg": 88.27,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "grad essay"
+    },
+    {
+      "courses_avg": 86.91,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "adv lab physiol"
+    },
+    {
+      "courses_avg": 86.63,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "adv neurophyl"
+    },
+    {
+      "courses_avg": 84.1,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "mam endocrinolgy"
+    },
+    {
+      "courses_avg": 89.38,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "renl&gastro phyl"
+    },
+    {
+      "courses_avg": 88.31,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "cardio&resp phyl"
+    },
+    {
+      "courses_avg": 84.03,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "adv cel&mol phys"
+    },
+    {
+      "courses_avg": 70.31,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 73.38,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 80.71,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 75.76,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 79,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "hnrs human phyl"
+    },
+    {
+      "courses_avg": 70.52,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 65.5,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 69.71,
+      "courses_year": 2013,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 89.75,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "grad essay"
+    },
+    {
+      "courses_avg": 87.75,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "adv lab physiol"
+    },
+    {
+      "courses_avg": 82.81,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "adv neurophyl"
+    },
+    {
+      "courses_avg": 85,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "mam endocrinolgy"
+    },
+    {
+      "courses_avg": 89.36,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "renl&gastro phyl"
+    },
+    {
+      "courses_avg": 88,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "cardio&resp phyl"
+    },
+    {
+      "courses_avg": 85.97,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "adv cel&mol phys"
+    },
+    {
+      "courses_avg": 69.53,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 71.47,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 74.45,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 74.34,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 88.14,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "hnrs human phyl"
+    },
+    {
+      "courses_avg": 71.27,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 69.16,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 69.77,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 85.89,
+      "courses_year": 2014,
+      "courses_dept": "caps",
+      "courses_title": "biom rsrch skill"
+    },
+    {
+      "courses_avg": 89.4,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "grad essay"
+    },
+    {
+      "courses_avg": 89.8,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "adv lab physiol"
+    },
+    {
+      "courses_avg": 84.5,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "adv neurophyl"
+    },
+    {
+      "courses_avg": 87.63,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "mam endocrinolgy"
+    },
+    {
+      "courses_avg": 84.91,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "renl&gastro phyl"
+    },
+    {
+      "courses_avg": 86.84,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "cardio&resp phyl"
+    },
+    {
+      "courses_avg": 86.56,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "adv cel&mol phys"
+    },
+    {
+      "courses_avg": 69.71,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "intr grs hum ant"
+    },
+    {
+      "courses_avg": 74.7,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "intr mcr hum ant"
+    },
+    {
+      "courses_avg": 88.86,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "hnrs human phyl"
+    },
+    {
+      "courses_avg": 69.65,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "human physiology"
+    },
+    {
+      "courses_avg": 84.71,
+      "courses_year": 2015,
+      "courses_dept": "caps",
+      "courses_title": "biom rsrch skill"
+    },
+    {
+      "courses_avg": 85.33,
+      "courses_year": 2016,
+      "courses_dept": "caps",
+      "courses_title": "adv cel&mol phys"
+    }
+  ],
+  "errorExpected": false
+}
+

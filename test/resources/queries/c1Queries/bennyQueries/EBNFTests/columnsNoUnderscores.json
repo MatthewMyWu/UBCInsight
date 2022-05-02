@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because columns are missing underscores",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"coursesavg": 21
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["coursesdept", "coursesavg"],
+			"ORDER": "coursesavg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

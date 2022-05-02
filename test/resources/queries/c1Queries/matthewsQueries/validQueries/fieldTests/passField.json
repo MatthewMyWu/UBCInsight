@@ -1,0 +1,479 @@
+{
+  "title": "Pass field",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_pass": 1500
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_pass",
+        "courses_fail",
+        "courses_year"
+      ],
+      "ORDER": "courses_pass"
+    }
+  },
+  "with": [
+    {
+      "courses_avg": 72.88,
+      "courses_pass": 1501,
+      "courses_fail": 19,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.75,
+      "courses_pass": 1501,
+      "courses_fail": 17,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.86,
+      "courses_pass": 1518,
+      "courses_fail": 10,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 74.98,
+      "courses_pass": 1521,
+      "courses_fail": 109,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.55,
+      "courses_pass": 1525,
+      "courses_fail": 17,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 67.42,
+      "courses_pass": 1526,
+      "courses_fail": 266,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.1,
+      "courses_pass": 1530,
+      "courses_fail": 115,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.83,
+      "courses_pass": 1545,
+      "courses_fail": 121,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.72,
+      "courses_pass": 1546,
+      "courses_fail": 137,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 70.22,
+      "courses_pass": 1551,
+      "courses_fail": 235,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 70.63,
+      "courses_pass": 1558,
+      "courses_fail": 184,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.66,
+      "courses_pass": 1571,
+      "courses_fail": 26,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 70.02,
+      "courses_pass": 1578,
+      "courses_fail": 150,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 73.44,
+      "courses_pass": 1579,
+      "courses_fail": 34,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 70.97,
+      "courses_pass": 1586,
+      "courses_fail": 192,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 74.49,
+      "courses_pass": 1586,
+      "courses_fail": 84,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.94,
+      "courses_pass": 1590,
+      "courses_fail": 23,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 73.51,
+      "courses_pass": 1626,
+      "courses_fail": 19,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 73.56,
+      "courses_pass": 1630,
+      "courses_fail": 69,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.77,
+      "courses_pass": 1634,
+      "courses_fail": 260,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 66.88,
+      "courses_pass": 1648,
+      "courses_fail": 147,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.3,
+      "courses_pass": 1667,
+      "courses_fail": 250,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 66.69,
+      "courses_pass": 1670,
+      "courses_fail": 116,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.2,
+      "courses_pass": 1674,
+      "courses_fail": 287,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.41,
+      "courses_pass": 1699,
+      "courses_fail": 251,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.14,
+      "courses_pass": 1705,
+      "courses_fail": 135,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 67.58,
+      "courses_pass": 1705,
+      "courses_fail": 187,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 76.47,
+      "courses_pass": 1710,
+      "courses_fail": 53,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 70.76,
+      "courses_pass": 1721,
+      "courses_fail": 72,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 74.53,
+      "courses_pass": 1738,
+      "courses_fail": 32,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 67.69,
+      "courses_pass": 1758,
+      "courses_fail": 136,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 71.98,
+      "courses_pass": 1760,
+      "courses_fail": 84,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.91,
+      "courses_pass": 1761,
+      "courses_fail": 73,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.72,
+      "courses_pass": 1762,
+      "courses_fail": 264,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 66.78,
+      "courses_pass": 1768,
+      "courses_fail": 162,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.22,
+      "courses_pass": 1780,
+      "courses_fail": 110,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.72,
+      "courses_pass": 1785,
+      "courses_fail": 146,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.62,
+      "courses_pass": 1787,
+      "courses_fail": 187,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 70.95,
+      "courses_pass": 1795,
+      "courses_fail": 73,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 67.49,
+      "courses_pass": 1817,
+      "courses_fail": 131,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.98,
+      "courses_pass": 1827,
+      "courses_fail": 135,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 74.36,
+      "courses_pass": 1830,
+      "courses_fail": 52,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 70.15,
+      "courses_pass": 1856,
+      "courses_fail": 87,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 67.7,
+      "courses_pass": 1866,
+      "courses_fail": 142,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.3,
+      "courses_pass": 1948,
+      "courses_fail": 27,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 70.08,
+      "courses_pass": 1948,
+      "courses_fail": 120,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.59,
+      "courses_pass": 1950,
+      "courses_fail": 69,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.15,
+      "courses_pass": 1953,
+      "courses_fail": 169,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.48,
+      "courses_pass": 1962,
+      "courses_fail": 181,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.41,
+      "courses_pass": 1966,
+      "courses_fail": 175,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.75,
+      "courses_pass": 1990,
+      "courses_fail": 32,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 73.39,
+      "courses_pass": 2015,
+      "courses_fail": 62,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.46,
+      "courses_pass": 2016,
+      "courses_fail": 85,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.98,
+      "courses_pass": 2019,
+      "courses_fail": 145,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.41,
+      "courses_pass": 2023,
+      "courses_fail": 145,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 66.86,
+      "courses_pass": 2063,
+      "courses_fail": 172,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.5,
+      "courses_pass": 2083,
+      "courses_fail": 119,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.45,
+      "courses_pass": 2095,
+      "courses_fail": 144,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.43,
+      "courses_pass": 2099,
+      "courses_fail": 79,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 67.24,
+      "courses_pass": 2124,
+      "courses_fail": 221,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.72,
+      "courses_pass": 2134,
+      "courses_fail": 142,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.27,
+      "courses_pass": 2169,
+      "courses_fail": 166,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.14,
+      "courses_pass": 2201,
+      "courses_fail": 172,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.25,
+      "courses_pass": 2278,
+      "courses_fail": 149,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.75,
+      "courses_pass": 2286,
+      "courses_fail": 126,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.51,
+      "courses_pass": 2289,
+      "courses_fail": 135,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 68.4,
+      "courses_pass": 2378,
+      "courses_fail": 132,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 69.82,
+      "courses_pass": 2438,
+      "courses_fail": 135,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 71.49,
+      "courses_pass": 2466,
+      "courses_fail": 69,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.02,
+      "courses_pass": 2491,
+      "courses_fail": 57,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.59,
+      "courses_pass": 2498,
+      "courses_fail": 45,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 71.51,
+      "courses_pass": 2502,
+      "courses_fail": 65,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 71.71,
+      "courses_pass": 2557,
+      "courses_fail": 59,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 73.17,
+      "courses_pass": 2655,
+      "courses_fail": 52,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 72.91,
+      "courses_pass": 2698,
+      "courses_fail": 79,
+      "courses_year": 1900
+    },
+    {
+      "courses_avg": 71.91,
+      "courses_pass": 2994,
+      "courses_fail": 63,
+      "courses_year": 1900
+    }
+  ],
+  "errorExpected": false
+}
+

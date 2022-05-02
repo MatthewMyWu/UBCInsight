@@ -1,0 +1,6 @@
+{
+	"title": "should reject a query that is null",
+	"input": null,
+	"with": "InsightError",
+	"errorExpected": true
+}

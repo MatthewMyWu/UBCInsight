@@ -1,0 +1,20 @@
+{
+	"title": "Field test for shortname field",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_shortname": "MATH"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname"
+			],
+			"ORDER": "rooms_shortname"
+		}
+	},
+	"with": [{"rooms_shortname":"MATH","rooms_fullname":"Mathematics"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics"},{"rooms_shortname":"MATH","rooms_fullname":"Mathematics"}],
+	"errorExpected": false
+}
+

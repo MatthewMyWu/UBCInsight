@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insight Facade</title>
+	<base href=".">
+	<link rel="stylesheet" href="./app.css">
+	<link rel="icon" href="resources/images/Calm Mind.jpeg">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="js/index.js" defer></script>
+</head>
+<body>
+<div id="app">
+	<div class="header">
+		<h1>Insight Facade</h1>
+		<div class="buttons">
+			<button v-on:click="change_courses" class="courses" v-bind:class="{ selected: dataset_id == 'courses'}">Courses</button>
+			<button v-on:click="change_rooms" class="rooms" v-bind:class="{ selected: dataset_id == 'rooms'}">Rooms</button>
+		</div>
+	</div>
+
+	<div id="layout">
+		<div class="prompts">
+			<p class="prompt_specify">I would like to find out information about the {{dataset_specifier}}: </p>
+			<div class="input">
+				<label for="specify_name">Name:</label>
+				<input type="text" id="specify_name" v-bind:placeholder="specify_name_placeholder" v-model="specify_name">
+			</div>
+			<div class="input">
+				<label for="specify_number">Number:</label>
+				<input type="text" id="specify_number" v-bind:placeholder="specify_number_placeholder" v-model="specify_number">
+			</div>
+
+			<p class="prompt_order">Ordered by: </p>
+			<div class="input">
+				<select id="order_dir" v-model="order_dir">
+					<option value="DOWN">Highest</option>
+					<option value="UP">Lowest</option>
+				</select>
+			</div>
+			<div class="input">
+				<select id="order_field" v-model="order_field">
+					<option value="" disabled hidden selected v-if="order_field === ''">Please Choose...</option>
+					<option v-for="object in fields" :value="Object.values(object)[0]">
+						{{Object.keys(object)[0]}}
+					</option>
+				</select>
+			</div>
+
+			<button v-on:click="submit">Submit</button>
+		</div>
+
+		<div class="output">
+			<table>
+				<thead>
+				<tr>
+					<th v-bind:colspan="fields.length">{{table_header}}</th>
+				</tr>
+				<tr>
+					<th v-for="object in fields">{{Object.keys(object)[0]}}</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr v-for="row in results">
+					<td v-for="value in row">{{value}}</td>
+				</tr>
+
+				</tbody>
+			</table>
+
+
+			<div v-if="error" class="error">
+				<h2>{{error_message}}</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

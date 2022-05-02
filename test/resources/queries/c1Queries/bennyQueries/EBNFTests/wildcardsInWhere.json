@@ -1,0 +1,25 @@
+{
+	"title": "should reject query with invalid wildcards in the WHERE",
+	"input":  {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"courses_avg": 91
+					}
+				},
+				{
+					"IS": {
+						"courses_dept": "*o*o*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_id", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

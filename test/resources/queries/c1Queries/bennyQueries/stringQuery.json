@@ -1,0 +1,6 @@
+{
+	"title": "should reject a query that is just a string",
+	"input": "hello",
+	"with": "InsightError",
+	"errorExpected": true
+}

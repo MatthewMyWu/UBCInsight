@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because MCOMPARISON has a skey",
+	"input":  {
+		"WHERE": {
+			"EQ": {
+				"courses_dept": 3
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_avg"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

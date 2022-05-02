@@ -1,0 +1,46 @@
+{
+	"title": "Testing COUNT for string field",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 40
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"countType"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"countType",
+					"rooms_shortname"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"countType": {
+						"COUNT": "rooms_type"
+					}
+				}
+			]
+		}
+	},
+	"with": [{"rooms_shortname":"AERL","countType":1},{"rooms_shortname":"AUDX","countType":1},{"rooms_shortname":"CHEM","countType":1},{"rooms_shortname":"CIRS","countType":1},{"rooms_shortname":"EOSM","countType":1},{"rooms_shortname":"ESB","countType":1},{"rooms_shortname":"FRDM","countType":1},{"rooms_shortname":"LSC","countType":1},{"rooms_shortname":"MATX","countType":1},{"rooms_shortname":"SRC","countType":1},{"rooms_shortname":"WESB","countType":1},{"rooms_shortname":"ALRD","countType":2},{"rooms_shortname":"ANSO","countType":2},{"rooms_shortname":"BIOL","countType":2},{"rooms_shortname":"BRKX","countType":2},{"rooms_shortname":"CHBE","countType":2},{"rooms_shortname":"DMP","countType":2},{"rooms_shortname":"FORW","countType":2},{"rooms_shortname":"HEBB","countType":2},{"rooms_shortname":"HENN","countType":2},{"rooms_shortname":"IONA","countType":2},{"rooms_shortname":"LSK","countType":2},{"rooms_shortname":"OSBO","countType":2},{"rooms_shortname":"PCOH","countType":2},{"rooms_shortname":"SCRF","countType":2},{"rooms_shortname":"SOWK","countType":2},{"rooms_shortname":"SPPH","countType":2},{"rooms_shortname":"UCLL","countType":2},{"rooms_shortname":"WOOD","countType":2},{"rooms_shortname":"CEME","countType":3},{"rooms_shortname":"FNH","countType":3},{"rooms_shortname":"FSC","countType":3},{"rooms_shortname":"GEOG","countType":3},{"rooms_shortname":"MATH","countType":3},{"rooms_shortname":"MCLD","countType":3},{"rooms_shortname":"ORCH","countType":3},{"rooms_shortname":"PHRM","countType":3},{"rooms_shortname":"SWNG","countType":3},{"rooms_shortname":"BUCH","countType":4},{"rooms_shortname":"IBLC","countType":4},{"rooms_shortname":"LASR","countType":4},{"rooms_shortname":"MCML","countType":4},{"rooms_shortname":"ANGU","countType":5}],
+	"errorExpected": false
+}

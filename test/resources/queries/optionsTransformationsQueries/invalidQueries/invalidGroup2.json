@@ -1,0 +1,37 @@
+{
+	"title": "Try to group by minimum course averages",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"courses_title": "*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_id",
+				"minAvg"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"minAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_id",
+				"minAvg"
+			],
+			"APPLY": [
+				{
+					"minAvg": {
+						"MIN": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

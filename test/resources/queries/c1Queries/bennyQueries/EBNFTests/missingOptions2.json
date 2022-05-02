@@ -1,0 +1,14 @@
+{
+	"title": "should reject query because the OPTIONS is missing but COLUMNS and ORDER exist",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"COLUMNS": ["courses_dept", "courses_avg"],
+		"ORDER": 0
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

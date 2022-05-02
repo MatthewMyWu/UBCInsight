@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because a column has a dataset key that is unchanged from the data",
+	"input":  {
+		"WHERE": {
+			"IS": {
+				"courses_Subject": "what"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_Subject"],
+			"ORDER": "courses_Subject"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

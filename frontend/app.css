@@ -1,0 +1,116 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  margin: 20px 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .desktop {
+    display: none !important;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  margin-bottom: 6px;
+  background-color: grey;
+  padding-left: 1.5rem;
+}
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  display: inline;
+}
+.header .buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0;
+  padding: 0;
+  margin: 0;
+}
+.header .buttons button {
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  height: 100%;
+}
+.header .buttons button.courses {
+  background-color: #f3c683;
+}
+.header .buttons button.courses.selected {
+  background-color: orange;
+}
+.header .buttons button.courses:hover {
+  background-color: #de8500;
+}
+.header .buttons button.rooms {
+  background-color: #bbf3f3;
+}
+.header .buttons button.rooms.selected {
+  background-color: aqua;
+}
+.header .buttons button.rooms:hover {
+  background-color: #00bbbb;
+}
+
+.output {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+}
+.output table {
+  margin: 0 auto;
+}
+.output table, .output td, .output th {
+  border: black 2px solid;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.output td, .output th {
+  padding: 5px;
+}
+
+.prompts {
+  padding: 30px;
+  margin: 30px;
+  border-radius: 10% 15%;
+  border: grey 1px solid;
+  height: 350px;
+}
+
+#layout {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.error {
+  color: red;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=app.css.map */

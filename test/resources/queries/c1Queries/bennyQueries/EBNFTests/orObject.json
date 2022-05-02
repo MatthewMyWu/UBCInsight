@@ -1,0 +1,18 @@
+{
+	"title": "should reject query because the OR contains object instead of array",
+	"input":  {
+		"WHERE": {
+			"OR": {
+				"GT": {
+					"courses_avg": 99
+				}
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_avg"],
+			"ORDER": "courses_dept"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

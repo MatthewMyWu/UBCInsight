@@ -1,0 +1,40 @@
+{
+	"title": "Testing COUNT for numerical field",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"GT": {
+						"rooms_seats": 40
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_type",
+				"countLat"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"countLat", "rooms_type"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_type"
+			],
+			"APPLY": [
+				{
+					"countLat": {
+						"COUNT": "rooms_lat"
+					}
+				}
+			]
+		}
+	},
+	"with": [{"rooms_type":"","countLat":1},{"rooms_type":"Active Learning","countLat":1},{"rooms_type":"Studio Lab","countLat":1},{"rooms_type":"TBD","countLat":1},{"rooms_type":"Small Group","countLat":3},{"rooms_type":"Case Style","countLat":8},{"rooms_type":"Open Design General Purpose","countLat":22},{"rooms_type":"Tiered Large Group","countLat":30}],
+	"errorExpected": false
+}

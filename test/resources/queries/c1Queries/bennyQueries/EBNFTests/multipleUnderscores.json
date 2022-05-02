@@ -1,0 +1,16 @@
+{
+	"title": "should reject query because column has key with multiple underscores",
+	"input":  {
+		"WHERE": {
+			"GT": {
+				"courses_fail_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["courses_dept", "courses_fail_avg"],
+			"ORDER": "courses_dept"
+		}
+	},
+	"with": "InsightError",
+	"errorExpected": true
+}

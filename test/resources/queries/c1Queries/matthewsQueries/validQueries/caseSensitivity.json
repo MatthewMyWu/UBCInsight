@@ -1,0 +1,25 @@
+{
+  "title": "Should return empty set because department field is uppercase",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "CPSC"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg",
+        "courses_pass",
+        "courses_instructor",
+        "courses_id",
+        "courses_year",
+        "courses_audit"
+      ],
+      "ORDER": "courses_year"
+    }
+  },
+  "with": [],
+  "errorExpected": false
+}
+

@@ -1,0 +1,37 @@
+{
+	"title": "Testing minimum course averages",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"courses_dept": "cpsc"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"minAvg"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"minAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"minAvg": {
+						"MIN": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"with": [{"courses_dept":"cpsc","courses_id":"513","minAvg":64},{"courses_dept":"cpsc","courses_id":"213","minAvg":64.62},{"courses_dept":"cpsc","courses_id":"221","minAvg":65.1},{"courses_dept":"cpsc","courses_id":"422","minAvg":66.13},{"courses_dept":"cpsc","courses_id":"320","minAvg":66.34},{"courses_dept":"cpsc","courses_id":"121","minAvg":67.13},{"courses_dept":"cpsc","courses_id":"322","minAvg":67.48},{"courses_dept":"cpsc","courses_id":"110","minAvg":67.79},{"courses_dept":"cpsc","courses_id":"314","minAvg":67.85},{"courses_dept":"cpsc","courses_id":"261","minAvg":67.91},{"courses_dept":"cpsc","courses_id":"210","minAvg":68.13},{"courses_dept":"cpsc","courses_id":"303","minAvg":68.35},{"courses_dept":"cpsc","courses_id":"340","minAvg":68.4},{"courses_dept":"cpsc","courses_id":"317","minAvg":68.54},{"courses_dept":"cpsc","courses_id":"302","minAvg":68.64},{"courses_dept":"cpsc","courses_id":"404","minAvg":68.76},{"courses_dept":"cpsc","courses_id":"420","minAvg":68.77},{"courses_dept":"cpsc","courses_id":"415","minAvg":68.79},{"courses_dept":"cpsc","courses_id":"421","minAvg":69.47},{"courses_dept":"cpsc","courses_id":"313","minAvg":70.46},{"courses_dept":"cpsc","courses_id":"301","minAvg":71},{"courses_dept":"cpsc","courses_id":"416","minAvg":71.75},{"courses_dept":"cpsc","courses_id":"425","minAvg":71.8},{"courses_dept":"cpsc","courses_id":"304","minAvg":71.89},{"courses_dept":"cpsc","courses_id":"411","minAvg":72.24},{"courses_dept":"cpsc","courses_id":"310","minAvg":72.27},{"courses_dept":"cpsc","courses_id":"259","minAvg":72.4},{"courses_dept":"cpsc","courses_id":"430","minAvg":72.75},{"courses_dept":"cpsc","courses_id":"311","minAvg":72.83},{"courses_dept":"cpsc","courses_id":"445","minAvg":73.18},{"courses_dept":"cpsc","courses_id":"344","minAvg":73.3},{"courses_dept":"cpsc","courses_id":"410","minAvg":74.04},{"courses_dept":"cpsc","courses_id":"589","minAvg":75},{"courses_dept":"cpsc","courses_id":"418","minAvg":75.61},{"courses_dept":"cpsc","courses_id":"312","minAvg":76.52},{"courses_dept":"cpsc","courses_id":"444","minAvg":77.43},{"courses_dept":"cpsc","courses_id":"500","minAvg":78.87},{"courses_dept":"cpsc","courses_id":"319","minAvg":78.93},{"courses_dept":"cpsc","courses_id":"503","minAvg":79.25},{"courses_dept":"cpsc","courses_id":"515","minAvg":79.88},{"courses_dept":"cpsc","courses_id":"502","minAvg":81.06},{"courses_dept":"cpsc","courses_id":"540","minAvg":81.12},{"courses_dept":"cpsc","courses_id":"544","minAvg":81.64},{"courses_dept":"cpsc","courses_id":"543","minAvg":82.07},{"courses_dept":"cpsc","courses_id":"507","minAvg":82.5},{"courses_dept":"cpsc","courses_id":"522","minAvg":82.55},{"courses_dept":"cpsc","courses_id":"521","minAvg":82.65},{"courses_dept":"cpsc","courses_id":"449","minAvg":83.08},{"courses_dept":"cpsc","courses_id":"527","minAvg":83.78},{"courses_dept":"cpsc","courses_id":"501","minAvg":83.8},{"courses_dept":"cpsc","courses_id":"509","minAvg":84.25},{"courses_dept":"cpsc","courses_id":"490","minAvg":84.5},{"courses_dept":"cpsc","courses_id":"547","minAvg":88.47}]
+}
